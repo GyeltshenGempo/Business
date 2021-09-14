@@ -7,6 +7,7 @@ export const useStyles=makeStyles(theme=>({
     right: theme.spacing(2),
   },
   header: {
-    backgroundColor: "#E56934"
+    backgroundColor: "#E56934",
+    boxShadow: 'none'
   }
 }))

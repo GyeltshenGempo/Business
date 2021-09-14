@@ -18,7 +18,7 @@ export default function BusinessIdea() {
       <Typography className={classes.business} variant={'h5'}>
         Business Idea
       </Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <Grid item lg={3}>
           <Card className={classes.root}>
             <CardActionArea>
@@ -28,12 +28,72 @@ export default function BusinessIdea() {
                 <img className={classes.featureImage} src={require('../../../assets/Image/b1.png').default} alt="pic1"/>
               </CardMedia>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography className={classes.featureTitle} gutterBottom variant="h5" component="h2">
                   Group Work
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                <Typography className={classes.featureDescription} variant="body2" color="textSecondary" component="p">
+                  Just add our Simple Store and connect to PayPal or Stripe. Start making sales and getting paid,
+                  immediately.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        <Grid item lg={3}>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                title="Contemplative Reptile"
+              >
+                <img className={classes.featureImage} src={require('../../../assets/Image/b2.png').default} alt="pic1"/>
+              </CardMedia>
+              <CardContent>
+                <Typography className={classes.featureTitle} gutterBottom variant="h5" component="h2">
+                  Group Work
+                </Typography>
+                <Typography className={classes.featureDescription} variant="body2" color="textSecondary" component="p">
+                  Just add our Simple Store and connect to PayPal or Stripe. Start making sales and getting paid,
+                  immediately.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        <Grid item lg={3}>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                title="Contemplative Reptile"
+              >
+                <img className={classes.featureImage} src={require('../../../assets/Image/b3.png').default} alt="pic1"/>
+              </CardMedia>
+              <CardContent>
+                <Typography className={classes.featureTitle} gutterBottom variant="h5" component="h2">
+                  Group Work
+                </Typography>
+                <Typography className={classes.featureDescription} variant="body2" color="textSecondary" component="p">
+                  Just add our Simple Store and connect to PayPal or Stripe. Start making sales and getting paid,
+                  immediately.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        <Grid item lg={3}>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                title="Contemplative Reptile"
+              >
+                <img className={classes.featureImage} src={require('../../../assets/Image/b4.png').default} alt="pic1"/>
+              </CardMedia>
+              <CardContent>
+                <Typography className={classes.featureTitle} gutterBottom variant="h5" component="h2">
+                  Group Work
+                </Typography>
+                <Typography className={classes.featureDescription} variant="body2" color="textSecondary" component="p">
+                  Just add our Simple Store and connect to PayPal or Stripe. Start making sales and getting paid,
+                  immediately.
                 </Typography>
               </CardContent>
             </CardActionArea>
