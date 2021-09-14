@@ -4,11 +4,9 @@ export const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 345,
   },
-  media: {
-    height: 140
-  },
   featureImage: {
-    objectFit: 'cover'
+   width: 296,
+    height: 165
   },
   business:{
     fontSize:48,

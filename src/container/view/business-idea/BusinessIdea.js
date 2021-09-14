@@ -23,10 +23,9 @@ export default function BusinessIdea() {
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
-                className={classes.media}
                 title="Contemplative Reptile"
               >
-                <img className={classes.featureImage} src={require('../../../assets/Image/b1.png').default} alt=""/>
+                <img className={classes.featureImage} src={require('../../../assets/Image/b1.png').default} alt="pic1"/>
               </CardMedia>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
