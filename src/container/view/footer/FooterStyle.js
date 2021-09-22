@@ -20,6 +20,22 @@ export const useStyles = makeStyles(theme => ({
     justifyContent: 'left',
     color: '#FFFFFF',
     marginLeft: '7em'
-
+  },
+  archives: {
+    fontSize: 20,
+    fontWeight: 800,
+    color:'#FFFFFF'
+  },
+  ourLocation:{
+    fontSize:20,
+    fontWeight: 800,
+    color:'#fff',
+    marginBottom: '1em'
+  },
+  locationIcon: {
+    display:'flex',
+    justifyContent: 'left',
+    color: '#FFFFFF',
+    marginLeft: '5em'
   }
 }))

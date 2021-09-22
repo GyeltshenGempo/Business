@@ -6,6 +6,7 @@ import Footer from './container/view/footer/Footer';
 import BusinessIdea from './container/view/business-idea/BusinessIdea';
 import BusinessPlan from './container/view/business-plan/BusinessPlan';
 import Testimonial from './container/view/testimonial/Testimonial';
+import ProductList from './container/view/product-list/ProductList';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Banner/>
       <BusinessIdea/>
       <BusinessPlan/>
+      <ProductList/>
       <Testimonial/>
       <Footer/>
     </div>

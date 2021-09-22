@@ -16,7 +16,7 @@ export const useStyles = makeStyles(theme => ({
   testimonialDescription: {
     color: '#FFFFFF',
     marginTop: '1em',
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: 400,
     lineHeight: 1.2
   }

@@ -24,7 +24,6 @@ export default function Banner() {
         <Grid item lg={6}>
           <img src={require("../../../assets/Image/banner.png").default} alt=""/>
         </Grid>
-
       </Grid>
     </Container>
   );

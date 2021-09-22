@@ -5,6 +5,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import CallIcon from '@material-ui/icons/Call';
 
 export default function Footer() {
   const classes = useStyles();
@@ -52,7 +54,32 @@ export default function Footer() {
                 </Typography>
               </div>
             </Grid>
-
+            <Grid item lg={'3'}>
+              <Typography className={classes.archives}>
+                Archives
+              </Typography>
+            </Grid>
+            <Grid item lg={'3'}>
+              <Typography className={classes.ourLocation}>
+                Our Location
+              </Typography>
+              <Grid container spacing={2} className={classes.locationIcon}>
+                <Grid item lg={12}>
+                  <Typography style={{float: 'left'}}>
+                    <LocationOnIcon fontSize={'small'}/>
+                    Upper Chagzamtog,(Jabla)
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid container spacing={2} className={classes.locationIcon}>
+                <Grid item lg={12}>
+                  <Typography style={{float: 'left'}}>
+                    <CallIcon fontSize={'small'}/>
+                    +975 77646536/+17646352
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
           </Grid>
         </Container>
       </Card>
