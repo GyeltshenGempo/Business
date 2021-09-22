@@ -4,8 +4,15 @@ export const useStyles = makeStyles(theme => ({
   root: {
     marginTop: '9em'
   },
+  bannerImg: {
+    [theme.breakpoints.down('xs')]: {
+      width: 400,
+      marginTop: '20%'
+    }
+  },
   textSpacing: {
     marginTop: '7em',
+    [theme.breakpoints.down('xs')]: {}
   },
   title: {
     color: '#557DA1',

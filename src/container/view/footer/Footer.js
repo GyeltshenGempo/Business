@@ -15,7 +15,7 @@ export default function Footer() {
       <Card className={classes.root}>
         <Container>
           <Grid container spacing={2}>
-            <Grid item lg={3}>
+            <Grid item lg={3} md={3} xs={12}>
               <Typography className={classes.footerTitle}>
                 About Business
               </Typography>
@@ -25,7 +25,7 @@ export default function Footer() {
                 for everyone to create a beautiful, <br/> professional web presence.
               </Typography>
             </Grid>
-            <Grid item lg={3}>
+            <Grid item lg={3} md={3} xs={12}>
               <Typography className={classes.footerTitle}>
                 Quick links
               </Typography>
@@ -54,17 +54,17 @@ export default function Footer() {
                 </Typography>
               </div>
             </Grid>
-            <Grid item lg={'3'}>
+            <Grid item lg={'3'} md={3} xs={12}>
               <Typography className={classes.archives}>
                 Archives
               </Typography>
             </Grid>
-            <Grid item lg={'3'}>
+            <Grid item lg={'3'} md={3} xs={12}>
               <Typography className={classes.ourLocation}>
                 Our Location
               </Typography>
               <Grid container spacing={2} className={classes.locationIcon}>
-                <Grid item lg={12}>
+                <Grid item lg={12} md={3} xs={12}>
                   <Typography style={{float: 'left'}}>
                     <LocationOnIcon fontSize={'small'}/>
                     Upper Chagzamtog,(Jabla)
@@ -72,7 +72,7 @@ export default function Footer() {
                 </Grid>
               </Grid>
               <Grid container spacing={2} className={classes.locationIcon}>
-                <Grid item lg={12}>
+                <Grid item lg={12} md={12} xs={12}>
                   <Typography style={{float: 'left'}}>
                     <CallIcon fontSize={'small'}/>
                     +975 77646536/+17646352

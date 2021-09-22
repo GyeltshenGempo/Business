@@ -8,7 +8,7 @@ export default function Banner() {
   return (
     <Container>
       <Grid container className={classes.root} spacing={2}>
-        <Grid item lg={6} className={classes.textSpacing}>
+        <Grid item lg={6} md={6} xs={12} className={classes.textSpacing}>
           <Typography className={classes.title} variant={"h3"}>
             Business Bhutan
           </Typography>
@@ -21,8 +21,8 @@ export default function Banner() {
             Visit Us
           </Button>
         </Grid>
-        <Grid item lg={6}>
-          <img src={require("../../../assets/Image/banner.png").default} alt=""/>
+        <Grid item lg={6} md={6} xs={12}>
+          <img src={require("../../../assets/Image/banner.png").default} alt="" className={classes.bannerImg}/>
         </Grid>
       </Grid>
     </Container>

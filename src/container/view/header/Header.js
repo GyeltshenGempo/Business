@@ -12,7 +12,7 @@ import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
 import {useStyles} from './HeaderStyle';
-import {Grid} from '@material-ui/core';
+import {Grid, Hidden} from '@material-ui/core';
 
 function ScrollTop(props) {
   const {children, window} = props;
@@ -58,35 +58,35 @@ export default function Header(props) {
     <React.Fragment>
       <CssBaseline/>
       <AppBar className={classes.header}>
-        <div>
+        <Hidden smDown={true}>
           <Grid container spacing={'2'}>
-            <Grid item lg={8}>
+            <Grid item lg={8} md={8} xs={8}>
               <Toolbar>
                 <img src={require('../../../assets/Image/logo.png').default} alt=""/>
               </Toolbar>
             </Grid>
-            <Grid item lg={1}>
+            <Grid item lg={1} md={1} xs={1}>
               <Toolbar>
                 Home
               </Toolbar>
             </Grid>
-            <Grid item lg={1}>
+            <Grid item lg={1} md={1} xs={1}>
               <Toolbar>
                About
               </Toolbar>
             </Grid>
-            <Grid item lg={1}>
+            <Grid item lg={1} md={1} xs={1}>
               <Toolbar>
                 Services
               </Toolbar>
             </Grid>
-            <Grid item lg={1}>
+            <Grid item lg={1} md={1} xs={1}>
               <Toolbar>
                 Logout
               </Toolbar>
             </Grid>
           </Grid>
-        </div>
+        </Hidden>
       </AppBar>
       <Toolbar id="back-to-top-anchor">
 

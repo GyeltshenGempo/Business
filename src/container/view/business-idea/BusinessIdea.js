@@ -19,7 +19,7 @@ export default function BusinessIdea() {
         Business Idea
       </Typography>
       <Grid container spacing={4}>
-        <Grid item lg={3}>
+        <Grid item lg={3} md={3} xs={6}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -39,7 +39,7 @@ export default function BusinessIdea() {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item lg={3}>
+        <Grid item lg={3} md={12} xs={6}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -59,7 +59,7 @@ export default function BusinessIdea() {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item lg={3}>
+        <Grid item lg={3} md={12} xs={6}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -79,7 +79,7 @@ export default function BusinessIdea() {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item lg={3}>
+        <Grid item lg={3} md={12} xs={6}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia

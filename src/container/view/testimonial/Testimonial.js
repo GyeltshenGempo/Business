@@ -11,21 +11,21 @@ export default function Testimonial() {
           Testimonial
         </Typography>
         <Grid container spacing={2}>
-          <Grid item lg={4}>
+          <Grid item lg={4} md={4} xs={4}>
             <img src={require('../../../assets/Image/t1.png').default} alt=""/>
             <Typography className={classes.testimonialDescription}>
               Wix.com is a leading cloud-based <br/> development platform with millions of <br/> users worldwide. We
               make it easy for <br/> everyone to create a beautiful, professional web presence.
             </Typography>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item lg={4} md={4} xs={4}>
             <img src={require('../../../assets/Image/t2.png').default} alt=""/>
             <Typography  className={classes.testimonialDescription}>
               Wix.com is a leading cloud-based <br/> development platform with millions of <br/> users worldwide. We
               make it easy for <br/> everyone to create a beautiful, professional web presence.
             </Typography>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item lg={4} md={4} xs={4}>
             <img src={require('../../../assets/Image/t3.png').default} alt=""/>
             <Typography className={classes.testimonialDescription}>
               Wix.com is a leading cloud-based <br/> development platform with millions of <br/> users worldwide. We

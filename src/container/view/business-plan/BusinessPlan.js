@@ -10,10 +10,10 @@ export default function BusinessPlan() {
         Business Plan
       </Typography>
       <Grid container spacing={1}>
-        <Grid item lg={'6'}>
+        <Grid item lg={'6'} md={6} xs={12}>
           <img src={require('../../../assets/Image/p1.png').default} alt=""/>
         </Grid>
-        <Grid item lg={'6'}>
+        <Grid item lg={'6'} md={6} xs={12}>
           <Card className={classes.businessRadius}>
             <Typography className={classes.planNumber} variant={'h6'}>
               Plan 1
@@ -35,7 +35,7 @@ export default function BusinessPlan() {
         </Grid>
       </Grid>
       <Grid container spacing={1}>
-        <Grid item lg={'6'}>
+        <Grid item lg={'6'} md={6} xs={12}>
           <Card className={classes.businessRadius}>
             <Typography className={classes.planNumber} variant={'h6'}>
               Plan 2
@@ -55,7 +55,7 @@ export default function BusinessPlan() {
             </Typography>
           </Card>
         </Grid>
-        <Grid item lg={'6'}>
+        <Grid item lg={'6'} md={6} xs={12}>
           <img src={require('../../../assets/Image/p2.png').default} alt=""/>
         </Grid>
       </Grid>
