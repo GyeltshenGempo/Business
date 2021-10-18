@@ -2,17 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import {makeStyles} from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
 import {useStyles} from './HeaderStyle';
 import {Grid} from '@material-ui/core';
+import {useHistory} from 'react-router-dom';
 
 function ScrollTop(props) {
   const {children, window} = props;
@@ -54,39 +51,39 @@ ScrollTop.propTypes = {
 
 export default function Header(props) {
   const classes = useStyles();
+  const history = useHistory();
+
   return (
     <React.Fragment>
       <CssBaseline/>
       <AppBar className={classes.header}>
-        <div>
-          <Grid container spacing={'2'}>
-            <Grid item lg={8}>
-              <Toolbar>
-                <img src={require('../../../assets/Image/logo.png').default} alt=""/>
-              </Toolbar>
-            </Grid>
-            <Grid item lg={1}>
-              <Toolbar>
-                Home
-              </Toolbar>
-            </Grid>
-            <Grid item lg={1}>
-              <Toolbar>
-               About
-              </Toolbar>
-            </Grid>
-            <Grid item lg={1}>
-              <Toolbar>
-                Services
-              </Toolbar>
-            </Grid>
-            <Grid item lg={1}>
-              <Toolbar>
-                Logout
-              </Toolbar>
-            </Grid>
+        <Grid container spacing={'2'}>
+          <Grid item lg={8}>
+            <Toolbar className='hand-cursor' onClick={() => history.push('/')}>
+              <img src={require('../../../assets/Image/logo.png').default} alt=""/>
+            </Toolbar>
           </Grid>
-        </div>
+          <Grid item lg={1}>
+            <Toolbar className='hand-cursor menu-hover' onClick={() => history.push('/')}>
+              Home
+            </Toolbar>
+          </Grid>
+          <Grid item lg={1}>
+            <Toolbar className='hand-cursor menu-hover' onClick={() => history.push('/about')}>
+              About
+            </Toolbar>
+          </Grid>
+          <Grid item lg={1}>
+            <Toolbar className='hand-cursor menu-hover'>
+              Services
+            </Toolbar>
+          </Grid>
+          <Grid item lg={1}>
+            <Toolbar className='hand-cursor menu-hover' onClick={() => history.push('/sign-in')}>
+              Logout
+            </Toolbar>
+          </Grid>
+        </Grid>
       </AppBar>
       <Toolbar id="back-to-top-anchor">
 

@@ -1,0 +1,20 @@
+.adminBanner {
+  padding-top: 70px;
+  color: #11AA44;
+  background-color: #636262;
+  height: 300px;
+}
+
+.adminCard {
+  width: 90%;
+  height: 700px;
+  position: absolute;
+  top: 150px;
+  left: 55px;
+}
+
+.cardHead {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
