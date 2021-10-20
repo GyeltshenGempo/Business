@@ -1,0 +1,58 @@
+@import '../../../assets/StyleSheets/_variable.scss';
+@import '../../../assets/StyleSheets/_breakpoints.scss';
+
+
+.signInBanner {
+  padding-top: 32px;
+  height: 100px;
+  background-color: $card-gray;
+}
+
+.signInCard {
+  width: 30%;
+  padding: 25px;
+  @include breakpoints('xs'){
+    width: 100%;
+  }
+}
+
+.signIn {
+  padding-bottom: 25px;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+}
+
+.linkButton {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.createAccountLink {
+  color: $black-color;
+  font-size: 13px;
+  padding-top: 50px;
+  text-decoration: none;
+  @include breakpoints('xs'){
+    padding-top: 20px;
+  }
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.forgotPwdLink {
+  color: $black-color;
+  font-size: 13px;
+  padding-top: 50px;
+  text-decoration: none;
+  @include breakpoints('xs'){
+    padding-top: 20px;
+  }
+  &:hover {
+    color: $primary-color;
+  }
+}

@@ -1,19 +1,19 @@
 import React, {useReducer} from 'react';
 import useCombinedReducers from 'use-combined-reducers';
-import {ProtectedNavigator} from './Routes/ProtectedNavigator';
-import {LandingNavigator} from './Routes/LandingNavigator';
+import {ProtectedNavigator} from './routes/ProtectedNavigator';
+import {LandingNavigator} from './routes/LandingNavigator';
 import {ApiUtils} from './utils/ApiUtils';
 import {createBrowserHistory} from 'history';
 import {DispatchContext, StateContext} from './store';
 import {statisticsReducer, userReducer} from './reducers';
 import {SnackbarProvider} from 'notistack';
-import {Routes} from './Routes/Routes';
-import {ProtectedRoutes} from './Routes/ProtectedRoutes';
+import {Routes} from './routes/Routes';
+import {ProtectedRoutes} from './routes/ProtectedRoutes';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import ForgotPassword from './Container/Auth/ForgotPassword/ForgotPassword';
-import SignUp from './Container/Auth/SignUp/SignUp';
-import SignIn from './Container/Auth/SignIn/SignIn';
-import './assets/stylesheets/_utility.scss';
+import ForgotPassword from './container/Auth/ForgotPassword/ForgotPassword';
+import SignUp from './container/Auth/SignUp/SignUp';
+import SignIn from './container/Auth/SignIn/SignIn';
+import './assets/StyleSheets/_utility.scss';
 
 function App() {
   const [state, dispatch] = useCombinedReducers({

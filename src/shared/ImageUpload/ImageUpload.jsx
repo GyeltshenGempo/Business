@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import {useSnackbar} from 'notistack';
 import {useFormikContext} from 'formik';
 import CloseIcon from '@material-ui/icons/Close';
-import {Notify, setProps} from '../components/notification/Notification';
+import {Notify, setProps} from '../Components/notification/Notification';
 
 const useStyles = makeStyles(theme => ({
   icon: {

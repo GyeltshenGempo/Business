@@ -1,61 +1,79 @@
-import * as React from 'react';
-import {alpha, InputBase, styled} from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import React from 'react';
+import InputBase from '@material-ui/core/InputBase';
+import {alpha, makeStyles} from '@material-ui/core/styles';
+import SearchIcon from '@material-ui/icons/Search';
 
-const SearchStyle = styled('div')(({theme}) => ({
-  position: 'relative',
-  border: '1px solid #000',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
+  search: {
+    position: 'relative',
+    borderRadius: theme.shape.borderRadius,
+    marginLeft: 0,
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      marginLeft: theme.spacing(1),
+      width: 'auto',
+    },
+  },
+  searchIcon: {
+    padding: theme.spacing(0, 2),
+    height: '100%',
+    position: 'absolute',
+    pointerEvents: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inputRoot: {
+    color: 'inherit',
     backgroundColor: alpha(theme.palette.common.white, 0.25),
+    borderRadius: theme.shape.borderRadius,
   },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
-  },
-}));
-
-const SearchIconWrapper = styled('div')(({theme}) => ({
-  padding: theme.spacing(0, 50),
-  color: '#000',
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}));
-
-const StyledInputBase = styled(InputBase)(({theme}) => ({
-  color: '#000',
-  '& .MuiInputBase-input': {
+  inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    vertical: 'padding + font size from searchIcon',
+    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create('width'),
     width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
+    [theme.breakpoints.up('sm')]: {
+      width: '12ch',
+      '&:focus': {
+        width: '20ch',
+      },
     },
   },
 }));
 
-export default function Search() {
-  return(
-    <div>
-      <SearchStyle className="searchIcon">
-        <SearchIconWrapper>
+export default function SearchAppBar() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <div className={classes.search}>
+        <div className={classes.searchIcon}>
           <SearchIcon/>
-        </SearchIconWrapper>
-        <StyledInputBase
+        </div>
+        <InputBase
           placeholder="Search…"
+          classes={{
+            root: classes.inputRoot,
+            input: classes.inputInput,
+          }}
           inputProps={{'aria-label': 'search'}}
         />
-      </SearchStyle>
+      </div>
     </div>
-  )
+  );
 }
