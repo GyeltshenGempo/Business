@@ -1,0 +1,32 @@
+@import '../assets/StyleSheets/_variable.scss';
+
+.preloader-wrapper {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  //background: #3C1877;
+  width: 100%;
+  height: 100%;
+
+  .preloader {
+    z-index: 9999;
+    left: 50%;
+    top: 45%;
+    position: absolute;
+  }
+
+  .offline-text {
+    left: 40%;
+    top: 40%;
+    position: absolute;
+  }
+
+  @media (max-width: 600px) {
+    .offline-text {
+      left: 10%;
+      top: 40%;
+      position: absolute;
+    }
+  }
+}
