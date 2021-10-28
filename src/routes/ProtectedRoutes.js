@@ -1,6 +1,5 @@
 import {commonAuthorization} from './RoleAuthorization';
 
-
 export const ProtectedRoutes = [
   {
     primaryText: 'Profile',

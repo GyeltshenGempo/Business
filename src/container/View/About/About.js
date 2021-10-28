@@ -1,12 +1,10 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import MyChatBot from './MyChatBot/MyChatBot';
 
 export default function About() {
   return (
     <div>
-      <Typography>
-        About us
-      </Typography>
+      <MyChatBot/>
     </div>
   );
 }

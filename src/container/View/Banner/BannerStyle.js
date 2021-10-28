@@ -11,7 +11,8 @@ export const useStyles = makeStyles(theme => ({
     color: '#557DA1',
     fontWeight: 800,
     fontSize: 48,
-    fontFamily: 'Lobster',
+    // fontFamily: 'Lobster',
+    fontFamily: 'Alegreya Sans',
   },
   description: {
     color: '#4D4D4D',
