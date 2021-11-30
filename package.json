@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@botonic/react": "^0.20.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@testing-library/jest-dom": "^5.11.4",
@@ -12,6 +13,7 @@
     "formik": "^2.2.9",
     "formik-material-ui": "^4.0.0-alpha.1",
     "history": "^5.0.1",
+    "material-auto-rotating-carousel": "^3.0.2",
     "node-sass": "^6.0.0",
     "notistack": "1.0.9",
     "react": "^17.0.2",
@@ -20,6 +22,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-simple-chatbot": "^0.6.1",
+    "react-swipeable-views": "^0.14.0",
     "reactstrap": "^8.10.0",
     "sass": "^1.43.3",
     "styled-components": "^5.3.3",

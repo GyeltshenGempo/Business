@@ -2,13 +2,14 @@ import React from 'react';
 import {Button, Container, Grid, Typography} from '@material-ui/core';
 import {useStyles} from './BannerStyle';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
-import ImageBanner from '../ImageBanner/ImageBanner';
 
 export default function Banner() {
   const classes = useStyles();
   return (
     <Container>
-      <ImageBanner/>
+      <div className='p-3'>
+        Hello Gempo
+      </div>
       <Grid container className={classes.root} spacing={2}>
         <Grid item lg={6} className={classes.textSpacing}>
           <Typography className={classes.title} variant={'h3'}>

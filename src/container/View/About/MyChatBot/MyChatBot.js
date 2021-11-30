@@ -2,9 +2,9 @@ import React from 'react';
 import ChatBot from 'react-simple-chatbot';
 import {ThemeProvider} from 'styled-components';
 
-const config ={
-  width: "400px",
-  height: "500px",
+const config = {
+  width: '400px',
+  height: '500px',
   floating: true,
   botDelay: 2000,
   cache: true,
@@ -50,6 +50,28 @@ export default function MyChatBot() {
             },
             {
               id: 'no-response',
+              message: 'Sorry to hear that.',
+              end: true,
+            },
+            {
+              id: 'loop',
+              message: 'Do you agree to the Terms and Conditions?',
+              trigger: 'loop_reply',
+            },
+            {
+              id: 'loop_reply',
+              options: [
+                {value: 'y', label: 'Yes', trigger: 'yes'},
+                {value: 'n', label: 'No', trigger: 'no'},
+              ]
+            },
+            {
+              id: 'yes',
+              message: 'Great!',
+              end: true,
+            },
+            {
+              id: 'no',
               message: 'Sorry to hear that.',
               end: true,
             },
